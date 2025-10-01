@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 ruby '2.3.0'
 
-gem 'rails', '~> 4.2.7'
+gem 'rails', '~> 5.0.0'
 
 gem 'mysql2', '0.4.10'
-gem 'sass-rails', '~> 5.0', '>= 5.0.6'
-gem 'coffee-rails'
+gem 'sass-rails', '~> 5.0', '>= 5.0.8'
+gem 'coffee-rails', '>= 5.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem "libv8"
@@ -17,17 +17,17 @@ gem 'jquery-rails'
 gem 'protected_attributes'
 
 # TO use devise for authentication
-gem 'devise'
+gem 'devise', '>= 4.9.4'
 
 # For login tracking
-gem 'paper_trail', '>= 3.0.0.rc2'
+gem 'paper_trail', '>= 11.0.0'
 
 # For background work (sending emails)
-gem 'sidekiq'
-gem 'sinatra', '>= 1.3.0', :require => nil
+gem 'sidekiq', '>= 5.2.9'
+gem 'sinatra', '>= 2.0.0', :require => nil
 
 # For email previewing
-gem 'letter_opener_web'
+gem 'letter_opener_web', '>= 1.4.0'
 
 # To use google charts
 gem 'googlecharts'
@@ -38,7 +38,7 @@ gem 'geokit'
 # gem 'mimemagic', '0.3.7'
 
 # To use jquery ui
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '>= 7.0.0'
 
 # To use rubyzip
 gem 'rubyzip', '>= 1.2.1'
@@ -59,7 +59,7 @@ gem 'ptools'
 gem 'execjs'
 
 # bootstrap
-gem "less-rails"
+gem "less-rails", ">= 5.0.0"
 gem 'bootstrap-sass'
 
 # For uploading email attacments
@@ -72,7 +72,7 @@ gem 'nested_form'
 gem 'jquery-datatables-rails'
 
 # d3 reports
-gem 'd3-rails', '3.5.17'
+gem 'd3-rails', '4.1.0'
 
 # pdf creation
 gem 'prawn', '~> 1.2.1'
@@ -94,10 +94,10 @@ gem 'axlsx_rails'
 gem 'codemirror-rails'
 
 # our test suite
-gem "rspec-rails", :group => [:test, :development]
+gem "rspec-rails", ">= 5.0.0", :group => [:test, :development]
 group :test do
-  gem "factory_bot_rails"
-  gem "capybara"
+  gem "factory_bot_rails", ">= 6.0.0"
+  gem "capybara", ">= 3.16.0"
   gem "guard-rspec"
   gem 'database_cleaner'
   gem 'faker'
@@ -110,18 +110,18 @@ group :production do
 end
 
 # ruby code style checker
-gem 'rubocop'
+gem 'rubocop', '>= 1.66.0'
 
 # optimize queries
 gem "bullet", :group => "development"
 
-gem 'public_activity'
+gem 'public_activity', '>= 2.0.0'
 
 # Used to tail log files
 gem 'file-tail'
 
 # decorators
-gem 'draper', '~> 1.3'
+gem 'draper', '~> 2.0', '>= 2.0.0'
 
 # foreman helper
 gem 'foreman'
