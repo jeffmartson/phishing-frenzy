@@ -13,7 +13,7 @@ gem "therubyracer"
 
 # core rails helpers
 gem 'uglifier'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.6.1'
 gem 'protected_attributes'
 
 # TO use devise for authentication
